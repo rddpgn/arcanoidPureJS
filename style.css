@@ -1,0 +1,46 @@
+#arcanoidCanvas {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32,32,32);
+    margin: auto;
+    display: block;
+    padding: 0px;
+    border: none;
+}
+
+#arcanoidContainer {
+    position: relative;
+    width: 20em;
+    height: 40rem;
+}
+
+#arcanoidControlButton {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.3em 1em;
+    font-weight: bold;
+    outline: none;
+    position: absolute;
+    bottom:33%;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    opacity: 1;
+    transition: opacity 0.25s, transform 0.25s, background-color 0.25s;
+    border-radius: 1em;
+}
+
+#arcanoidControlButton:hover {
+    transform: translateY(-0.25rem);
+    cursor: pointer;
+    background-color: rgba(0,0,0,1);
+}
+
+#arcanoidControlButton.hide {
+    opacity: 0;
+}
+
+
+
